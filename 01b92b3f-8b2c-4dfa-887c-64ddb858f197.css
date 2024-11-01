@@ -1,0 +1,11 @@
+.List___3x3KQ {
+  /**
+   * The decision to suppress the default (horizontal) scroll bars is intentional.
+   * The snapshot selector is small enough that the scrollbar renders it essentially useless.
+   * There are two alternative navigation mechanisms (arrow keys and arrow buttons).
+   * If necessary, we could also expand the click-and-drag mechanism to scroll.
+   */
+  overflow-x: hidden !important;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9idmF1Z2huL0RvY3VtZW50cy9naXQvcmVhY3QtZGV2dG9vbHMtZXhwZXJpbWVudGFsL3NyYy9kZXZ0b29scy92aWV3cy9Qcm9maWxlci9TbmFwc2hvdENvbW1pdExpc3QuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7Ozs7O0tBS0c7RUFDSCw4QkFBOEI7Q0FDL0IiLCJmaWxlIjoiU25hcHNob3RDb21taXRMaXN0LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5MaXN0IHtcbiAgLyoqXG4gICAqIFRoZSBkZWNpc2lvbiB0byBzdXBwcmVzcyB0aGUgZGVmYXVsdCAoaG9yaXpvbnRhbCkgc2Nyb2xsIGJhcnMgaXMgaW50ZW50aW9uYWwuXG4gICAqIFRoZSBzbmFwc2hvdCBzZWxlY3RvciBpcyBzbWFsbCBlbm91Z2ggdGhhdCB0aGUgc2Nyb2xsYmFyIHJlbmRlcnMgaXQgZXNzZW50aWFsbHkgdXNlbGVzcy5cbiAgICogVGhlcmUgYXJlIHR3byBhbHRlcm5hdGl2ZSBuYXZpZ2F0aW9uIG1lY2hhbmlzbXMgKGFycm93IGtleXMgYW5kIGFycm93IGJ1dHRvbnMpLlxuICAgKiBJZiBuZWNlc3NhcnksIHdlIGNvdWxkIGFsc28gZXhwYW5kIHRoZSBjbGljay1hbmQtZHJhZyBtZWNoYW5pc20gdG8gc2Nyb2xsLlxuICAgKi9cbiAgb3ZlcmZsb3cteDogaGlkZGVuICFpbXBvcnRhbnQ7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */

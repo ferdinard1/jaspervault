@@ -1,0 +1,18 @@
+.HocBadges___1Y5Xl {
+  padding: 0.125rem 0.25rem;
+  user-select: none;
+}
+
+.Badge___1FCCz {
+  display: inline-block;
+  background-color: var(--color-component-badge-background);
+  color: var(--color-text);
+  padding: 0.125rem 0.25rem;
+  line-height: normal;
+  border-radius: 0.125rem;
+  margin-right: 0.25rem;
+  font-family: var(--font-family-monospace);
+  font-size: var(--font-size-monospace-small);
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9idmF1Z2huL0RvY3VtZW50cy9naXQvcmVhY3QtZGV2dG9vbHMtZXhwZXJpbWVudGFsL3NyYy9kZXZ0b29scy92aWV3cy9Db21wb25lbnRzL0hvY0JhZGdlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsa0JBQWtCO0NBQ25COztBQUVEO0VBQ0Usc0JBQXNCO0VBQ3RCLDBEQUEwRDtFQUMxRCx5QkFBeUI7RUFDekIsMEJBQTBCO0VBQzFCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIsc0JBQXNCO0VBQ3RCLDBDQUEwQztFQUMxQyw0Q0FBNEM7Q0FDN0MiLCJmaWxlIjoiSG9jQmFkZ2VzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5Ib2NCYWRnZXMge1xuICBwYWRkaW5nOiAwLjEyNXJlbSAwLjI1cmVtO1xuICB1c2VyLXNlbGVjdDogbm9uZTtcbn1cblxuLkJhZGdlIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1jb2xvci1jb21wb25lbnQtYmFkZ2UtYmFja2dyb3VuZCk7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci10ZXh0KTtcbiAgcGFkZGluZzogMC4xMjVyZW0gMC4yNXJlbTtcbiAgbGluZS1oZWlnaHQ6IG5vcm1hbDtcbiAgYm9yZGVyLXJhZGl1czogMC4xMjVyZW07XG4gIG1hcmdpbi1yaWdodDogMC4yNXJlbTtcbiAgZm9udC1mYW1pbHk6IHZhcigtLWZvbnQtZmFtaWx5LW1vbm9zcGFjZSk7XG4gIGZvbnQtc2l6ZTogdmFyKC0tZm9udC1zaXplLW1vbm9zcGFjZS1zbWFsbCk7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */

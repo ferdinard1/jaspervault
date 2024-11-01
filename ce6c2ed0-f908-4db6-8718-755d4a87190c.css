@@ -1,0 +1,59 @@
+/* Used to detect in JavaScript if apps have loaded styles or not. */
+:root {
+  --reach-menu-button: 1;
+}
+
+[data-reach-menu] {
+  font-family: sans-serif;
+  display: block;
+  position: absolute;
+}
+
+[data-reach-menu-list] {
+  display: block;
+  white-space: nowrap;
+  border: solid 1px hsla(0, 0%, 0%, 0.25);
+  background: hsla(0, 100%, 100%, 0.99);
+  outline: none;
+  padding: 1rem 0;
+  font-size: 85%;
+}
+
+[data-reach-menu-item] {
+  display: block;
+}
+
+/*
+ The dom structure of a MenuLink is reach-menu-item > a,
+ so to target all items we can use `data-reach-menu-item`
+*/
+[data-reach-menu-item] {
+  /*
+    These are styled in one rule instead of something like a[data-reach-menu-item]
+    and li[data-reach-menu-item] so that apps don't have to fight specificity and
+    can style both li and a menu items with one rule,
+    ie: `[data-selected] { background: red; }`.
+    Otherwise they'd have to define two styles, one for a and one for li.
+  */
+
+  /* reach-menu-item */
+  cursor: pointer;
+
+  /* a */
+  display: block;
+  color: inherit;
+  font: inherit;
+  text-decoration: initial;
+
+  /* both */
+  padding: 5px 20px;
+}
+
+/* pseudo pseudo selector */
+[data-reach-menu-item][data-selected] {
+  background: hsl(211, 81%, 36%);
+  color: white;
+  outline: none;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9idmF1Z2huL0RvY3VtZW50cy9naXQvcmVhY3QtZGV2dG9vbHMtZXhwZXJpbWVudGFsL25vZGVfbW9kdWxlcy9AcmVhY2gvbWVudS1idXR0b24vc3R5bGVzLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxxRUFBcUU7QUFDckU7RUFDRSx1QkFBdUI7Q0FDeEI7O0FBRUQ7RUFDRSx3QkFBd0I7RUFDeEIsZUFBZTtFQUNmLG1CQUFtQjtDQUNwQjs7QUFFRDtFQUNFLGVBQWU7RUFDZixvQkFBb0I7RUFDcEIsd0NBQXdDO0VBQ3hDLHNDQUFzQztFQUN0QyxjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGVBQWU7Q0FDaEI7O0FBRUQ7RUFDRSxlQUFlO0NBQ2hCOztBQUVEOzs7RUFHRTtBQUNGO0VBQ0U7Ozs7OztJQU1FOztFQUVGLHFCQUFxQjtFQUNyQixnQkFBZ0I7O0VBRWhCLE9BQU87RUFDUCxlQUFlO0VBQ2YsZUFBZTtFQUNmLGNBQWM7RUFDZCx5QkFBeUI7O0VBRXpCLFVBQVU7RUFDVixrQkFBa0I7Q0FDbkI7O0FBRUQsNEJBQTRCO0FBQzVCO0VBQ0UsK0JBQStCO0VBQy9CLGFBQWE7RUFDYixjQUFjO0NBQ2YiLCJmaWxlIjoic3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFVzZWQgdG8gZGV0ZWN0IGluIEphdmFTY3JpcHQgaWYgYXBwcyBoYXZlIGxvYWRlZCBzdHlsZXMgb3Igbm90LiAqL1xuOnJvb3Qge1xuICAtLXJlYWNoLW1lbnUtYnV0dG9uOiAxO1xufVxuXG5bZGF0YS1yZWFjaC1tZW51XSB7XG4gIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xuICBkaXNwbGF5OiBibG9jaztcbiAgcG9zaXRpb246IGFic29sdXRlO1xufVxuXG5bZGF0YS1yZWFjaC1tZW51LWxpc3RdIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gIGJvcmRlcjogc29saWQgMXB4IGhzbGEoMCwgMCUsIDAlLCAwLjI1KTtcbiAgYmFja2dyb3VuZDogaHNsYSgwLCAxMDAlLCAxMDAlLCAwLjk5KTtcbiAgb3V0bGluZTogbm9uZTtcbiAgcGFkZGluZzogMXJlbSAwO1xuICBmb250LXNpemU6IDg1JTtcbn1cblxuW2RhdGEtcmVhY2gtbWVudS1pdGVtXSB7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4vKlxuIFRoZSBkb20gc3RydWN0dXJlIG9mIGEgTWVudUxpbmsgaXMgcmVhY2gtbWVudS1pdGVtID4gYSxcbiBzbyB0byB0YXJnZXQgYWxsIGl0ZW1zIHdlIGNhbiB1c2UgYGRhdGEtcmVhY2gtbWVudS1pdGVtYFxuKi9cbltkYXRhLXJlYWNoLW1lbnUtaXRlbV0ge1xuICAvKlxuICAgIFRoZXNlIGFyZSBzdHlsZWQgaW4gb25lIHJ1bGUgaW5zdGVhZCBvZiBzb21ldGhpbmcgbGlrZSBhW2RhdGEtcmVhY2gtbWVudS1pdGVtXVxuICAgIGFuZCBsaVtkYXRhLXJlYWNoLW1lbnUtaXRlbV0gc28gdGhhdCBhcHBzIGRvbid0IGhhdmUgdG8gZmlnaHQgc3BlY2lmaWNpdHkgYW5kXG4gICAgY2FuIHN0eWxlIGJvdGggbGkgYW5kIGEgbWVudSBpdGVtcyB3aXRoIG9uZSBydWxlLFxuICAgIGllOiBgW2RhdGEtc2VsZWN0ZWRdIHsgYmFja2dyb3VuZDogcmVkOyB9YC5cbiAgICBPdGhlcndpc2UgdGhleSdkIGhhdmUgdG8gZGVmaW5lIHR3byBzdHlsZXMsIG9uZSBmb3IgYSBhbmQgb25lIGZvciBsaS5cbiAgKi9cblxuICAvKiByZWFjaC1tZW51LWl0ZW0gKi9cbiAgY3Vyc29yOiBwb2ludGVyO1xuXG4gIC8qIGEgKi9cbiAgZGlzcGxheTogYmxvY2s7XG4gIGNvbG9yOiBpbmhlcml0O1xuICBmb250OiBpbmhlcml0O1xuICB0ZXh0LWRlY29yYXRpb246IGluaXRpYWw7XG5cbiAgLyogYm90aCAqL1xuICBwYWRkaW5nOiA1cHggMjBweDtcbn1cblxuLyogcHNldWRvIHBzZXVkbyBzZWxlY3RvciAqL1xuW2RhdGEtcmVhY2gtbWVudS1pdGVtXVtkYXRhLXNlbGVjdGVkXSB7XG4gIGJhY2tncm91bmQ6IGhzbCgyMTEsIDgxJSwgMzYlKTtcbiAgY29sb3I6IHdoaXRlO1xuICBvdXRsaW5lOiBub25lO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */
